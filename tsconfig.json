@@ -26,8 +26,5 @@
     "buildOnSave": false,
     "atom": {
         "rewriteTsconfig": false
-    },
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true
-  }
+    }
 }
