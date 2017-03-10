@@ -9,7 +9,10 @@
         "outDir": "build"
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts",
+        "typings/index.d.ts"
     ],
     "filesGlob": [
         "./index.ts",
@@ -21,6 +24,10 @@
     "awesomeTypescriptLoaderOptions": {
         "resolveGlobs": true,
         "forkChecker": true
+    },
+    "angularCompilerOptions": {
+        "genDir": "build/src",
+        "strictMetadataEmit": true
     },
     "compileOnSave": false,
     "buildOnSave": false,
