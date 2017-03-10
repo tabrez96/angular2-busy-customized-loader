@@ -10,6 +10,7 @@
     },
     "exclude": [
         "node_modules",
+        "demo",
         "typings/main",
         "typings/main.d.ts",
         "typings/index.d.ts"
@@ -26,7 +27,6 @@
         "forkChecker": true
     },
     "angularCompilerOptions": {
-        "genDir": "build/src",
         "strictMetadataEmit": true
     },
     "compileOnSave": false,
