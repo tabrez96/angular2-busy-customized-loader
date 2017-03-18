@@ -12,7 +12,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
-var index_1 = require("angular2-dynamic-component/index");
 var busy_directive_1 = require("./busy.directive");
 var busy_service_1 = require("./busy.service");
 var busy_backdrop_component_1 = require("./busy-backdrop.component");
@@ -25,7 +24,10 @@ var BusyModule = BusyModule_1 = (function () {
         return {
             ngModule: BusyModule_1,
             providers: [
-                { provide: busy_config_1.BusyConfig, useValue: config }
+                {
+                    provide: busy_config_1.BusyConfig,
+                    useValue: config
+                }
             ]
         };
     };
@@ -33,21 +35,13 @@ var BusyModule = BusyModule_1 = (function () {
 }());
 BusyModule = BusyModule_1 = __decorate([
     core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            index_1.DynamicComponentModule
-        ],
+        imports: [common_1.CommonModule],
         declarations: [
-            busy_directive_1.BusyDirective,
-            busy_component_1.BusyComponent,
-            busy_backdrop_component_1.BusyBackdropComponent,
+            busy_directive_1.BusyDirective, busy_component_1.BusyComponent, busy_backdrop_component_1.BusyBackdropComponent
         ],
         providers: [busy_service_1.BusyService],
         exports: [busy_directive_1.BusyDirective],
-        entryComponents: [
-            busy_component_1.BusyComponent,
-            busy_backdrop_component_1.BusyBackdropComponent
-        ]
+        entryComponents: [busy_component_1.BusyComponent, busy_backdrop_component_1.BusyBackdropComponent]
     })
 ], BusyModule);
 exports.BusyModule = BusyModule;
