@@ -32,7 +32,7 @@
     "test": "cross-env NODE_ENV=test webpack --inline --progress --colors --watch --content-base test"
   },
   "dependencies": {
-    "angular2-dynamic-component": "^1.3.15",
+    "angular2-dynamic-component": "1.3.16",
     "ts-metadata-helper": "0.0.4"
   },
   "devDependencies": {
