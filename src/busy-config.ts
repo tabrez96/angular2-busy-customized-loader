@@ -36,7 +36,7 @@ export interface IBusyConfig {
 
 export const BUSY_CONFIG_DEFAULTS = {
     template: `
-     <div bsModal #successModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     <div bsModal #loaderModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
         aria-hidden="true" style="background: rgba(54, 59, 59, 0.50);z-index: 10000;">
         <div class="modal-dialog success-modal modal-sm"> 
            <div class="modal-content">
